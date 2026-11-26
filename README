@@ -1,0 +1,22 @@
+# Spice Route Kitchen: Restaurant Landing Page
+
+A fast, responsive website for a fictional South Indian restaurant, built as a portfolio project.
+
+**Live demo:** _add your Vercel link here_
+
+## The problem it solves
+Small restaurants lose orders when customers can't easily see the menu or book a table on mobile. This site lets a customer order a dish or reserve a table in two taps, through WhatsApp, with no backend or monthly fees.
+
+## Features
+- Mobile-first responsive layout
+- One-tap WhatsApp ordering and table booking (pre-filled messages)
+- Scroll animations and animated counters
+- Embedded Google Map, lazy-loaded images
+- No frameworks or dependencies, loads in about a second
+
+## Customise
+- Change `WHATSAPP_NUMBER` in `script.js`
+- Add photos to `images/` (`hero.jpg`, `chicken.jpg`, `fish.jpg`, `dosa.jpg`, `biryani.jpg`)
+
+## Tech
+HTML5, CSS3 (Grid, Flexbox, variables), vanilla JavaScript (IntersectionObserver), Google Fonts

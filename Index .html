@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Spice Route Kitchen - fresh South Indian and coastal food in Chennai. Dine-in, takeaway and online table booking." />
+  <meta name="theme-color" content="#d9480f" />
+  <title>Spice Route Kitchen | South Indian & Coastal Food</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#home" class="logo">Spice Route<span>.</span></a>
+    <button class="menu-btn" aria-label="Toggle menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+    <nav class="links" onclick="this.classList.remove('open')">
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact" class="btn small">Book a Table</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text fade">
+      <p class="tag">Fresh • Local • Made daily</p>
+      <h1>Coastal flavours, cooked the way home tastes.</h1>
+      <p class="sub">Authentic South Indian and seafood dishes made with hand-ground spices and fresh ingredients.</p>
+      <div class="cta">
+        <a href="#menu" class="btn">View Menu</a>
+        <a href="#contact" class="btn ghost">Reserve</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="fade">Our Story</h2>
+    <p class="lead fade">Started in 2015 by a family of cooks, Spice Route Kitchen brings recipes passed down for three generations. We grind our masalas in-house every morning and buy our fish from local fishermen.</p>
+    <div class="stats fade">
+      <div><strong data-count="10" data-suffix="+">0</strong><span>Years serving</span></div>
+      <div><strong data-count="50" data-suffix="+">0</strong><span>Dishes</span></div>
+      <div><strong data-count="5000" data-suffix="+">0</strong><span>Happy guests</span></div>
+    </div>
+  </section>
+
+  <section id="menu" class="section alt">
+    <h2 class="fade">Popular Dishes</h2>
+    <p class="lead fade">Tap a dish to order it on WhatsApp.</p>
+    <div class="cards">
+      <a class="card dish fade" data-dish="Chettinad Chicken">
+        <div class="thumb"><span class="emoji">🍛</span><img src="images/chicken.png" alt="Chettinad Chicken" loading="lazy" onerror="this.remove()" /></div>
+        <h3>Chettinad Chicken</h3><p>Slow-cooked with roasted spices and curry leaves.</p><span class="price">₹320</span>
+      </a>
+      <a class="card dish fade" data-dish="Fish Curry Meals">
+        <div class="thumb"><span class="emoji">🐟</span><img src="images/fish.png" alt="Fish Curry Meals" loading="lazy" onerror="this.remove()" /></div>
+        <h3>Fish Curry Meals</h3><p>Tangy coconut-tamarind curry with rice and sides.</p><span class="price">₹280</span>
+      </a>
+      <a class="card dish fade" data-dish="Ghee Roast Dosa">
+        <div class="thumb"><span class="emoji">🥞</span><img src="images/dosa.png" alt="Ghee Roast Dosa" loading="lazy" onerror="this.remove()" /></div>
+        <h3>Ghee Roast Dosa</h3><p>Crisp dosa with sambar and three chutneys.</p><span class="price">₹140</span>
+      </a>
+      <a class="card dish fade" data-dish="Veg Biryani">
+        <div class="thumb"><span class="emoji">🍚</span><img src="images/biryani.png" alt="Veg Biryani" loading="lazy" onerror="this.remove()" /></div>
+        <h3>Veg Biryani</h3><p>Fragrant basmati with seasonal vegetables and raita.</p><span class="price">₹220</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="reviews" class="section">
+    <h2 class="fade">What Guests Say</h2>
+    <div class="cards">
+      <blockquote class="card fade"><div class="stars">★★★★★</div>“Best fish curry in town. Tastes like my grandmother's.”<footer>- Priya S.</footer></blockquote>
+      <blockquote class="card fade"><div class="stars">★★★★★</div>“Quick service and the dosa was perfectly crisp.”<footer>- Arun K.</footer></blockquote>
+      <blockquote class="card fade"><div class="stars">★★★★★</div>“Great for family dinners. Clean and welcoming.”<footer>- Meena R.</footer></blockquote>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <h2 class="fade">Book a Table</h2>
+    <p class="lead fade">Fill this in and we'll confirm on WhatsApp.</p>
+    <form id="bookForm" class="form fade">
+      <input id="name" type="text" placeholder="Your name" required />
+      <input id="date" type="date" required />
+      <select id="guests" required>
+        <option value="">Guests</option>
+        <option>1-2</option><option>3-4</option><option>5-8</option>
+      </select>
+      <button class="btn" type="submit">Reserve on WhatsApp</button>
+    </form>
+    <p class="info">📍 12 Beach Road, Chennai &nbsp;|&nbsp; 🕒 11 AM - 11 PM daily</p>
+    <iframe class="map" title="Map" loading="lazy" src="https://www.google.com/maps?q=Marina+Beach+Chennai&output=embed"></iframe>
+  </section>
+
+  <footer class="footer">© 2026 Spice Route Kitchen. A demo project.</footer>
+
+  <a id="wa" class="wa" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">💬</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
